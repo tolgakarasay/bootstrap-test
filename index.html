@@ -395,8 +395,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-
+   
+   <script>
         $(document).ready(function () {
             $("#mycarousel").carousel({ interval: 2000 });
 
@@ -412,20 +412,14 @@
                     $("#carouselButton").children("span").addClass("fa-pause");
                 };
             });
-        });
-    </script>
-
-    <script>
-        $(document).ready(function () {
 
             $("#loginButton").click(function () {
-                $('#loginModal').modal('show')
+                $('#loginModal').modal('toggle')
             });
 
             $("#reserveButton").click(function () {
-                $('#reserveModal').modal('show')
+                $('#reserveModal').modal('toggle')
             });
-
         });
     </script>
 
